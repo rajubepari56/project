@@ -1,0 +1,63 @@
+*{ margin:0; padding:0 }
+.main{
+    width: 1140px;
+    display: grid;
+    margin: auto;
+}
+.sectionOne{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0
+}
+.sectionOne .left{
+    width: 40%;
+    text-align: center;
+    padding: 50PX;
+}
+.sectionOne .left h1{
+    font-size: 6vw;
+    color: black;
+    -webkit-text-fill-color: rgb(67, 6, 6); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(233, 12, 12);
+}
+.sectionOne .right{
+    width: 60%;
+    text-align: right;
+}
+.sectionOne .right img{
+    width: 80%;
+}
+.sectionTwo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0
+}
+.sectionTwo .left{
+    width: 60%;
+    text-align: left;
+}
+.sectionTwo .left img{
+    width: 80%;
+}
+.sectionTwo .right{
+    width: 40%;
+    text-align: left;
+}
+.sectionTwo .right h2{
+    font-size: 2vw;
+}
+.sectionTwo .right ol{
+    margin-top: 30px;
+    left: 30px;
+}
+.sectionTwo .right ol li{
+    font-size: 20px;  
+    line-height: 30px;
+    padding-left: 10px;
+}
+.sectionTwo .right ol ::marker{
+    color: red;
+}
