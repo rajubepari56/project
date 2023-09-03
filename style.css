@@ -3,7 +3,50 @@
     width: 1140px;
     display: grid;
     margin: auto;
+    padding-bottom: 50px;
 }
+
+.navMenu{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px 0; 
+    justify-content: space-between;
+}
+.navMenu img{
+    width: 120px;
+    cursor: pointer;
+}
+.navMenu ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    margin: 0 20px;
+}
+.navMenu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+.navMenu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navMenu ul li:hover::after{
+    width: 100%;
+}
+
+
+
 .sectionOne{
     display: flex;
     align-items: center;
@@ -60,4 +103,26 @@
 }
 .sectionTwo .right ol ::marker{
     color: red;
+}
+.priceTable{
+    display: grid;
+    justify-content: center;
+}
+.priceTable h2{
+font-size: 26px;
+padding: 30PX 0;
+text-align: center;
+}
+.priceTable table{
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+.priceTable table tr th, .priceTable table tr td{
+    border: 1px solid rgb(231, 230, 231, 1);
+    padding: 10px 15px;
+    text-align: center;
+}
+.priceTable table tr th{
+    border: 1px solid rgb(203, 130, 203);
 }
